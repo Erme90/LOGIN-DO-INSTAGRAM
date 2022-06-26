@@ -1,0 +1,106 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="{% static 'css/estilo.css'%}">
+</head>
+<body class="flexbox">
+
+    <div id="everything">
+        <section class="flexbox">
+
+            <div id="smartphone-pics">
+                
+                <img id="smartphone" src="{% static 'img/smartphone.png'%}" alt="Smartphone running Instagram">
+                    <div class="segundo_cel">
+                        <img id="celular"  src="{% static 'img/smartphone.png'%}"  alt="Smartphone running Instagram">
+                        <img id="screenshot" src="{% static 'img/profile-screenshot.jpg'%}">
+                    </div>
+            </div>
+    
+            <div id="main-menu" class="flexbox column">
+    
+                <div id="main-frame" class="flexbox column frame">
+    
+                    <img src="{% static 'img/instagram-logo.png'%}" alt="Instagram logo" id="ig-logo">
+                    <div id="login-menu" class="flexbox column width-100">
+                        <form action="{% url 'login' %}" method="POST">
+                            {% csrf_token %}
+                            <input type="text" placeholder="Username..." name="username"/>
+                            <br><br>
+                            <input type="password" placeholder="senha..." name="senha"/>
+                            <br><br>
+                            <input type="submit" value="Entrar"/>
+                            <br><br>
+                        </form>
+                        <div id="or" class="flexbox width-100">
+                            <div class="bar"></div>
+                            <p id="or-p">OR</p>
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+                    
+                    <div id="facebook-forgot" class="flexbox column">
+    
+                        <div class="flexbox width-100">
+                            
+                            <img src="{% static 'img/facebook.png'%}" alt="" id="facebook-icon">
+                            <p id="login-facebook"><a href="">Log in with Facebook</a></p>
+                        </div>
+                        <p id="forgot-password"><a href="">Forgot password?</a></p>
+                        
+                    </div>
+    
+                </div>
+    
+                <div id="sign-up-frame" class="flexbox column frame">
+    
+                    <p id="text-14">Don't have an account? <a href="{% url 'cadastro'%}" id="sign-up-a" >Sign up</a></p>
+    
+                </div>
+    
+                <p id="text-14">Get the app.</p>
+    
+                <div id="download" class="flexbox">
+                    <a href=""><img src="{% static 'img/apple-button.png'%}" alt="Download on the playstore" class="download-button"></a>
+                    <a href=""><img src="{%static 'img/googleplay-button.png'%}" alt="Get it on Google Play" class="download-button"></a>
+                </div>
+    
+            </div>
+    
+        </section>
+
+        <footer class="flexbox column justify-center">
+            <ul>
+                <li class="footer-text">Meta</p>
+                <li class="footer-text">About</p>
+                <li class="footer-text">Blog</p>
+                <li class="footer-text">Jobs</p>
+                <li class="footer-text">Help</p>
+                <li class="footer-text">API</p>
+                <li class="footer-text">Privacy</p>
+                <li class="footer-text">Terms</p>
+                <li class="footer-text">Top Accounts</p>
+                <li class="footer-text">Hashtags</p>
+                <li class="footer-text">Locations</p>
+                <li class="footer-text">Instagram Lite</p>
+                <li class="footer-text">Contact Uploading & Non-Users</p>
+            </ul>
+            <ul class="inline-list">
+                <li class="footer-text">Dance</p>
+                <li class="footer-text">Food & Drink</p>
+                <li class="footer-text">Home & Garden</p>
+                <li class="footer-text">Music</p>
+                <li class="footer-text">Visual Arts</p>
+            </ul>
+        </footer>
+
+    </div>
+
+</body>
+</html>
