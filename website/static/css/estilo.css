@@ -106,6 +106,10 @@ a {
     background-color: lightgray;
 }
 
+.texto_cadastro{
+    text-align: center;
+}
+
 .download-button {
     width: 140px;
 }
@@ -120,6 +124,25 @@ a {
     left: 130px;
     top: 10px;
     width: 240px;
+}
+
+.cadastro{
+    
+}
+
+#logo_cadastro{
+    display: block;
+    margin:0px auto;
+    margin-top:  50px;
+    height: 45px;
+    width: 169px;
+
+}
+
+#facebook_cadastro{
+    display: block;
+    margin:0px auto;
+    
 }
 
 #ig-logo {
