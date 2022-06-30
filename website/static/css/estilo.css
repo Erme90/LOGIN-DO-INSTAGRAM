@@ -1,5 +1,7 @@
 body {
     background-color: rgb(245, 245, 245);
+    
+    
 }
 
 section {
@@ -126,16 +128,39 @@ a {
     width: 240px;
 }
 
-.cadastro{
+.container{
+    border:solid 5px #f0f0f0;
+    width: 100vw;
+    height: 100vh;
+    background: #fafafa;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin:0px; 
+    
     
 }
 
-#logo_cadastro{
+
+
+.box{
+  
+    width: 300px;
+    height: 300px;
+    background: #ffffff;
+  
+
+}
+
+
+.logo_cadastro{
     display: block;
-    margin:0px auto;
-    margin-top:  50px;
+    margin:0px;
+    margin-bottom: 400px;
     height: 45px;
     width: 169px;
+    position: absolute;
 
 }
 
@@ -176,9 +201,16 @@ a {
     font-weight: bold;
 }
 
-#login-facebook {
-    font-weight: bold;
+#login-facebook, #linkface {
+    height: 28px;
+    width: 237px;
     font-size: 14px;
+    font-weight: bolder;
+    color: white;
+    background-color: #0095f6;
+    border-radius: 5px;
+    border-style: none;  
+    
 }
 
 #forgot-password {

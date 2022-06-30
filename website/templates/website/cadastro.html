@@ -6,31 +6,14 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Instagram</title>
+        <title>Cadastro</title>
         <link rel="stylesheet" href="{% static 'css/estilo.css'%}">
     </head>
 
-<body>
-    <div class="flexbox column width-100">
-        <div class="texto_cadastro">
-            <img src="{% static 'img/instagram-logo.png'%}" alt="Instagram logo" id="logo_cadastro" >
-            <h3>Cadastre-se para ver fotos e <br>vídeos dos seus amigos.</h3>
-        </div>
-
-        <div class="logfacebook" id="facebook_cadastro">
-            <div class="flexbox width-100" >
-                <img src="{% static 'img/facebook.png'%}" id="facebook-icon">
-                <p id="login-facebook"><a href="">Log in with Facebook</a></p>
-            </div>
-        </div>
-
-        <div id="or" class="flexbox width-100">
-            <div class="bar"></div>
-            <p id="or-p">OU</p>
-            <div class="bar"></div>
-        </div>
-        <div id="login-menu" class="flexbox column width-100">
-            <form action="{% url 'login' %}" method="POST">
+    <body>
+        <div class="container">
+            <img class="logo_cadastro" src="{% static 'img/instagram-logo.png'%}" alt="logo_instagram">
+            <form class="box"action="{% url 'login' %}" method="POST">
                 {% csrf_token %}
                 <input type="text" placeholder="Número do celular ou email" name="cadastroemail"/>
                 <br><br>
@@ -42,17 +25,8 @@
                 <br><br>
                 <input type="submit" value="Cadastre-se"/>
                 <br><br>
-            <div class="paragrafos">
-            <p>As pessoas que usam nosso serviço podem ter 
-                carregado suas informações de contato no Instagram. 
-                Saiba mais</p>
-
-            <p>Ao se cadastrar, você concorda com nossos Termos, 
-                Política de Dados e Política de Cookies.</p>
-            </div>
-            </form>
+            </form>  
         </div>
-    </div>
-</body>
+    </body>
 
 </html>
