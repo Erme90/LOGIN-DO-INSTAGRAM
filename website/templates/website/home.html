@@ -6,11 +6,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/estilo.css'%}">
     <title>Página inicial</title>
+    
 </head>
+
+<header>
+    <div class="cabecalho">
+        <div class="homelogo">
+            <img src="{% static 'img/instagram-logo.png'%}" alt="Instagram logo">
+        </div>
+        <div class="homelogout">
+            <a href="/auth/home">Logout</a>
+        </div>
+    </div>
+<article>
+</header>
+
+<nav class="barra-nav-home">
+    <a>Opções de navegação</a>
+</nav>
+
 <body class="corpo-inicio">
+    
+    <aside>
+        <p>conteudo do aside</p>
+    </aside>
+    <aside>
+        <p>conteudo do aside</p>
+    </aside>
+    
     <p>Login efetuado</p>
-    <p>Bem vindo ao</p>
-    <img id="logo_inicio" src="{% static 'img/instagram-logo.png'%}" alt="Instagram logo">
+    <p>Bem vindo</p>
+    <br>
+    
+    <div class="container_img_home">
+        <div class="img1">
+            <img src="{% static 'img/dog.jpg'%}" height="100%" width="auto" >
+        
+        </div>
+        <div class="img1">
+            <img src="{% static 'img/tigre.jpg'%}" height="100%" width="450px" >
+        
+        </div>
+    </div>
+    <section>
+        <p>Esta é um seção (section)</p>
+    </section>
+    <section>
+        <p>Esta é um seção (section)</p>
+    </section>
+    
+</article>
 </body>
+<footer class="footer-home">
+    <p>Este é o rodapé</p>
+</footer>
 </html>

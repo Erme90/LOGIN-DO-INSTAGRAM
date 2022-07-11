@@ -74,6 +74,49 @@ a {
     color: rgb(40, 40, 110);
 }
 
+
+
+
+
+
+
+.cabecalho{
+    
+    background-color: #0095f6;
+    text-align: right;
+}
+.cabecalho .homelogo{
+    text-align: left;
+}
+
+.barra-nav-home{
+    background-color: aquamarine;
+}
+
+.container_img_home{
+    object-fit: fill;
+} 
+.img1{
+    max-width: 10;
+    display: flex;
+    width:40px;
+    display: inline;
+    
+}
+
+.img2{
+    max-width: 50px;
+    display:flex;
+    width:40px; 
+    display: inline;
+}
+
+
+
+
+
+
+
 .flexbox {
     display: flex;
     align-items: center;
@@ -201,7 +244,7 @@ a {
     font-weight: bold;
 }
 
-#login-facebook, #linkface {
+#login-facebook p {
     height: 28px;
     width: 237px;
     font-size: 14px;
