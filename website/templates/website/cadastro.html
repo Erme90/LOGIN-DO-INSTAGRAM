@@ -13,18 +13,31 @@
     <body>
         <div class="container">
             <img class="logo_cadastro" src="{% static 'img/instagram-logo.png'%}" alt="logo_instagram">
-            <form class="box"action="{% url 'login' %}" method="POST">
+            <form class="box" method="POST">
                 {% csrf_token %}
-                <input type="text" placeholder="Número do celular ou email" name="cadastroemail"/>
-                <br><br>
-                <input type="text" placeholder="Nome completo" name="cadastroemail"/>
-                <br><br>
-                <input type="text" placeholder="Nome de usuário" name="cadastroemail"/>
-                <br><br>
-                <input type="password" placeholder="senha" name="senha"/>
-                <br><br>
-                <input type="submit" value="Cadastre-se"/>
-                <br><br>
+                
+                <div class="form-group">
+                    {{form_usuario.username.errors}}
+                    <label>Username: </label>
+                    {{form_usuario.username}}
+                </div>
+            
+                <div class="form-group">
+                    {{form_usuario.password1.errors}}
+                    <label>Senha: </label>
+                    {{form_usuario.password1}}
+                </div>
+            
+                <div class="form-group">
+                    {{form_usuario.password2.errors}}
+                    <label>Confirmação de senha: </label>
+                    {{form_usuario.password2}}
+                </div>
+            
+                <div class="form-group">
+                    <input type="submit" href="{% url 'login'%}"value="Cadastrar" class="btn btn-primary">
+                </div>
+
             </form>  
         </div>
     </body>
