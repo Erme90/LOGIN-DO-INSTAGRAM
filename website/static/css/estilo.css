@@ -74,36 +74,39 @@ a {
     color: rgb(40, 40, 110);
 }
 
-
-
-
-
-
-
 .cabecalho{
     
     background-color: #0095f6;
     text-align: right;
 }
+
+#icones{
+    
+    font-size: 100%;
+}
+
 .cabecalho .homelogo{
     text-align: left;
 }
+
 
 .barra-nav-home{
     background-color: aquamarine;
 }
 
 .img_home{
-    height: 600px;
-    width: 600px;
+    height: 700px;
+    width: 700px;
     margin: 0 auto;
     border: solid black;
+    
 } 
 .img_home img{
     object-fit: contain;
     max-width: 100%;
     max-height: 100%;
     margin: 0%;
+    
     
 }
 
@@ -175,9 +178,6 @@ a {
     
     
 }
-
-
-
 .box{
   
     width: 300px;
