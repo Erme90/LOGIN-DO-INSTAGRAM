@@ -98,7 +98,7 @@ a {
     height: 700px;
     width: 700px;
     margin: 0 auto;
-    border: solid black;
+    
     
 } 
 .img_home img{
@@ -108,8 +108,26 @@ a {
     margin: 0%;
     
     
+    
+}
+.corpo-inicio{
+    background-color:#fafafa;
+}
+.bloco-historys{
+    display: inline;   
+    background: #ffffff;
+    border: solid gray 3px;
+     
 }
 
+.bloco-historys img{
+    border-radius: 160%;
+    border: solid black 3px;
+    width: 100px;
+    height: 100px;
+    
+    
+}
 
 .flexbox {
     display: flex;
