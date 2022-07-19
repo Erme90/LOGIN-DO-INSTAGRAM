@@ -1,98 +1,236 @@
 {% load static %}
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/estilo.css'%}">
-    
-    <!--icone-->
-    
 
-    <title>Página PROTEGIDA POR LOGIN</title>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <link rel="stylesheet" href="{% static 'css/csshome.css'%}">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- Icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <title>Michelli Brito</title>
 </head>
 
-<header>
-    <div class="cabecalho">
-        <div id="icones">
-        <!--home-->
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
-            <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
-        </svg>
-        <!--message-->
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-square-quote" viewBox="0 0 16 16">
-            <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-            <path d="M7.066 4.76A1.665 1.665 0 0 0 4 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z"/>
-        </svg>
-        <!--add-->
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
-            <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-        </svg>
-        <!--compass-->
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-compass" viewBox="0 0 16 16">
-            <path d="M8 16.016a7.5 7.5 0 0 0 1.962-14.74A1 1 0 0 0 9 0H7a1 1 0 0 0-.962 1.276A7.5 7.5 0 0 0 8 16.016zm6.5-7.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
-            <path d="m6.94 7.44 4.95-2.83-2.83 4.95-4.949 2.83 2.828-4.95z"/>
-        </svg>
-        <!--heart-->
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-        </svg>  
-        </div>   
-          
+<body class="body">
 
-        <div class="homelogo">
-            <img src="{% static 'img/instagram-logo.png'%}" alt="Instagram logo">
-           
+    <!-- Nav-->
+    <header>
+        <nav class="navbar navbar-light nav-top">
+            <div class="container-fluid nav-container">
+                <a class="navbar-brand" href="https://www.instagram.com" target="_blank"><img
+                        src="{%static 'img/instagram-logo.png'%}" style=" max-width:130px; 
+                    max-height:80px"></a>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                </form>
+                <div style="width: 30%;">
+                    <i class="bi bi-house-door icons"></i>
+                    <i class="bi bi-inbox icons"></i>
+                    <i class="bi bi-compass icons"></i>
+                    <i class="bi bi-heart icons"></i>
+                    <img class="img-nav" src="{% static 'img/pessoa.jpg'%}">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main-->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-0 col-md-2"></div>
+                <div class="col-12 col-md-8">
+
+                    <!-- Profile-->
+                    <div class="container">
+                        <div class="row" style="padding-top: 20px;">
+                            <div class="col-3">
+                                <img class="img-profile" src="{% static 'img/pessoa.jpg'%}">
+                            </div>
+                            <div class="col-7">
+                                <div class="row" style="padding-top: 20px; padding-bottom: 10px;">
+                                    <div class="col-8 col-lg-5">
+                                        <h2 class="username">nanda_mari</h2>
+                                    </div>
+                                    <div class="col-4 col-lg-6"><button type="button"
+                                            class="btn btn-outline-secondary button-edit">Editar
+                                            perfil</button></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <p class="profile-datas"><strong>7</strong> publicações</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <p class="profile-datas"><strong>839</strong> seguidores</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <p class="profile-datas"><strong>793</strong> seguindo</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h1 class="name">Maria Fernanda</h1>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="profile-desc">Enfluencer | Personal Trip</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2"></div>
+                        </div>
+                    </div>
+                  
+                    <!-- Stories-->
+                    <div style="padding-top: 0px;">
+                        <div class="row">
+                            <div class="col-2"><img class="img-his" src="{% static 'img/pessoa.jpg'%}"></div>
+                            <div class="col-2"><img class="img-his" src="{% static 'img/caveira.jpg'%}"></div>
+                            <div class="col-2"> <img class="img-his" src="{% static 'img/dog.jpg' %}"></div>
+                        </div>
+                    </div>
+                    <div style="padding-bottom: 40px;">
+                        <div class="row">
+                            <div class="col-2 stories"> Checklist</div>
+                            <div class="col-2 stories"> Youtube</div>
+                            <div class="col-2 stories"> Developer</div>
+                        </div>
+                    </div>
+
+                    <!-- Line-->
+                    <hr size="3" width="100%" color="#EEEEEE" style="margin: 0%;">
+
+                    <!-- Nav-Feed-->
+                    <ul class="nav nav-tabs nav-feed" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active nav-link-1" id="home-tab" data-bs-toggle="tab" href="#home" role="tab"
+                                aria-controls="home" aria-selected="true"><i class="bi bi-grid-3x3"></i> PUBLICAÇÕES</a>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link nav-link-2" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab"
+                                aria-controls="profile" aria-selected="false"><i class="bi bi-file-person"></i> MARCADOS</a>
+                        </li>
+                    </ul>
+
+                    <!-- Card-Feed-->
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="row" style="padding-bottom: 25px;">
+                                <div class="col-4">
+                                    <div class="card">
+                                        <img src="{% static 'img/dog.jpg' %}" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card">
+                                        <img src="{% static 'img/pessoa.jpg' %}" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card">
+                                        <img src="{% static 'img/ferramentas.jpg' %}" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row" style="padding-bottom: 25px;">
+                                <div class="col-4">
+                                    <div class="card">
+                                        <img src="{% static 'img/pordosol.jpg' %}" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card">
+                                        <img src="{% static 'img/tigre.jpg' %}" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card">
+                                        <img src="{% static 'img/peixe.jpg' %}" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row" style="padding-bottom: 25px;">
+                                <div class="col-4">
+                                    <div class="card">
+                                        <img src="{% static 'img/caveira.jpg' %}" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card">
+                                    
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"></div>
+                    </div>
+                </div>
+                <div class="col-0 col-md-2"></div>
+            </div>
         </div>
-        <div class="homelogout">
-           
-            <a href="/auth/login">Logout</a>
-        </div>
-    </div>
-</header>
-<nav>
-    <a>Barra de navegação</a>
-</nav>
+    </section>
 
-<body class="corpo-inicio">
-    <p>Login efetuado</p>
-    <p>Bem vindo</p>
 
-    
-    <div class="bloco-historys">
 
-        <img src="{% static 'img/dog.jpg'%}">
-        <img src="{% static 'img/dog.jpg'%}">
-        <img src="{% static 'img/dog.jpg'%}">
-        <img src="{% static 'img/dog.jpg'%}">
-        <img src="{% static 'img/dog.jpg'%}">
-        <img src="{% static 'img/dog.jpg'%}">
-        <img src="{% static 'img/dog.jpg'%}">
-        <img src="{% static 'img/dog.jpg'%}">
-        <img src="{% static 'img/dog.jpg'%}">
-    
-    </div>
+    <script type="text/javascript">
 
-    <div class="img_home">
-        
-            <img src="{% static 'img/dog.jpg'%}">
-            <img src="{% static 'img/tigre.jpg'%}">
-            <img src="{% static 'img/dogdeoculos.jpg'%}">
-            <img src="{% static 'img/ferramentas.jpg'%}">
-            <img src="{% static 'img/caveira.jpg'%}">
-            <img src="{% static 'img/pessoa.jpg'%}">
-            <img src="{% static 'img/peixe.jpg'%}">
-            <img src="{% static 'img/dog.jpg'%}">
-            <img src="{% static 'img/tigre.jpg'%}">
-            <img src="{% static 'img/dogdeoculos.jpg'%}">
-            <img src="{% static 'img/ferramentas.jpg'%}">
-            <img src="{% static 'img/caveira.jpg'%}">
-            <img src="{% static 'img/pessoa.jpg'%}">
-            <img src="{% static 'img/peixe.jpg'%}">
-    </div>
+        var crl = document.getElementById('myCrl').getContext('2d');
+
+        crl.beginPath();
+        crl.arc(60, 100, 40, 0, 2 * Math.PI);
+        crl.fillStyle = '#00ACC1';
+        crl.fill();
+        crl.linewidth = 5;
+        crl.strokeStyle = '#dbdbdb';
+        crl.stroke();
+
+        var crl1 = document.getElementById('myCrl1').getContext('2d');
+
+        crl1.beginPath();
+        crl1.arc(60, 100, 40, 0, 2 * Math.PI);
+        crl1.fillStyle = '#F8BBD0';
+        crl1.fill();
+        crl1.linewidth = 5;
+        crl1.strokeStyle = '#dbdbdb';
+        crl1.stroke();
+
+        var crl2 = document.getElementById('myCrl2').getContext('2d');
+
+        crl2.beginPath();
+        crl2.arc(60, 100, 40, 0, 2 * Math.PI);
+        crl2.fillStyle = '#E91E63';
+        crl2.fill();
+        crl2.linewidth = 5;
+        crl2.strokeStyle = '#dbdbdb';
+        crl2.stroke();
+
+    </script>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>

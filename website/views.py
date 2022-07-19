@@ -39,7 +39,9 @@ def Login (request):                                                #nome da fun
 def Home(request):
     return render(request, 'website/home.html')
     
-    
+
+def Recupera (request):
+    return render(request, 'website/recuperasenha.html')
 
 
         
