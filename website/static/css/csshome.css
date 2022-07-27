@@ -1,3 +1,7 @@
+.body {
+    background-color: #fafafa;
+}
+
 .nav-top {
     height: 63px; 
     background-color: white !important; 
@@ -31,19 +35,19 @@
     -moz-border-radius: 100%; 
     max-width:30px; 
     max-height:25px;
+    height: 120px;
+    width: 120px;
 }
 
 .img-profile {
-    border-radius: 100%;
+    border-radius: 50%;
     -o-border-radius: 100%;
     -webkit-border-radius: 100%;
-    -moz-border-radius: 180px; 
+    -moz-border-radius: 100%; 
     max-width:200px; 
     max-height:150px;
-}
-
-.img-his{
-    
+    width: 180px;
+    height: 180px;
 }
 
 .username {
@@ -90,6 +94,12 @@
     font-weight: 600;
 }
 
+.destaque{
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+}
+
 
 .card {
     border: 0px solid rgba(0,0,0,.125) !important;
@@ -99,6 +109,7 @@
 .card .card-img, .card-img-top {
     border-top-left-radius: 0rem !important;
     border-top-right-radius: 0rem !important;
+    background-size: cover;
 }
 
 .stories{
@@ -106,8 +117,6 @@
     font-size: 15px;
     font-weight: 600;
 }
-
-
 
 .form-control {
     border-radius: .15rem !important;

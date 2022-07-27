@@ -154,7 +154,7 @@ a {
     border-color: lightgray;
     padding: 10px 40px 10px 40px;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 130px;
 }
 
 .bar {
@@ -165,6 +165,8 @@ a {
 
 .texto_cadastro{
     text-align: center;
+    background-color: aqua;
+    
 }
 
 .download-button {

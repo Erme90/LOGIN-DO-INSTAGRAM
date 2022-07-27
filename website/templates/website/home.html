@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-   <link rel="stylesheet" href="{% static 'css/csshome.css'%}">
+    <link rel="stylesheet" href="{% static 'css/csshome.css' %}">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -17,7 +17,7 @@
     <!-- Icon-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
-    <title>Michelli Brito</title>
+    <title>Maria José</title>
 </head>
 
 <body class="body">
@@ -26,8 +26,8 @@
     <header>
         <nav class="navbar navbar-light nav-top">
             <div class="container-fluid nav-container">
-                <a class="navbar-brand" href="https://www.instagram.com" target="_blank"><img
-                        src="{%static 'img/instagram-logo.png'%}" style=" max-width:130px; 
+                <a class="navbar-brand" href="https://www.instagram.com/" target="_blank"><img
+                        src="{% static 'img/instagram-logo.png'%}" style=" max-width:130px; 
                     max-height:80px"></a>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
@@ -59,7 +59,7 @@
                             <div class="col-7">
                                 <div class="row" style="padding-top: 20px; padding-bottom: 10px;">
                                     <div class="col-8 col-lg-5">
-                                        <h2 class="username">nanda_mari</h2>
+                                        <h2 class="username">ma_jo</h2>
                                     </div>
                                     <div class="col-4 col-lg-6"><button type="button"
                                             class="btn btn-outline-secondary button-edit">Editar
@@ -70,33 +70,33 @@
                                         <p class="profile-datas"><strong>7</strong> publicações</p>
                                     </div>
                                     <div class="col-4">
-                                        <p class="profile-datas"><strong>839</strong> seguidores</p>
+                                        <p class="profile-datas"><strong>300</strong> seguidores</p>
                                     </div>
                                     <div class="col-4">
-                                        <p class="profile-datas"><strong>793</strong> seguindo</p>
+                                        <p class="profile-datas"><strong>250</strong> seguindo</p>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-12">
-                                        <h1 class="name">Maria Fernanda</h1>
+                                        <h1 class="name">Maria José da Silva</h1>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-12">
-                                        <p class="profile-desc">Enfluencer | Personal Trip</p>
+                                        <p class="profile-desc">Java Architect | Developer</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-2"></div>
                         </div>
                     </div>
-                  
+
                     <!-- Stories-->
                     <div style="padding-top: 0px;">
                         <div class="row">
-                            <div class="col-2"><img class="img-his" src="{% static 'img/pessoa.jpg'%}"></div>
-                            <div class="col-2"><img class="img-his" src="{% static 'img/caveira.jpg'%}"></div>
-                            <div class="col-2"> <img class="img-his" src="{% static 'img/dog.jpg' %}"></div>
+                            <div class="col-2"> <img src="{% static 'img/profile-screenshot.jpg' %}" class="destaque"></div>
+                            <div class="col-2"> <img src="{% static 'img/orvalho.jpeg' %}" class="destaque"></div>
+                            <div class="col-2"> <img src="{% static 'img/developer.jpg' %}" class="destaque"></div>
                         </div>
                     </div>
                     <div style="padding-bottom: 40px;">
@@ -129,12 +129,7 @@
                             <div class="row" style="padding-bottom: 25px;">
                                 <div class="col-4">
                                     <div class="card">
-                                        <img src="{% static 'img/dog.jpg' %}" class="card-img-top" alt="...">
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="card">
-                                        <img src="{% static 'img/pessoa.jpg' %}" class="card-img-top" alt="...">
+                                        <img src="{% static 'img/dog.jpg'%}" class="card-img-top" alt="...">
                                     </div>
                                 </div>
                                 <div class="col-4">
@@ -142,12 +137,17 @@
                                         <img src="{% static 'img/ferramentas.jpg' %}" class="card-img-top" alt="...">
                                     </div>
                                 </div>
+                                <div class="col-4">
+                                    <div class="card">
+                                        <img src="{% static 'img/dogdeoculos.jpg' %}" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="row" style="padding-bottom: 25px;">
                                 <div class="col-4">
                                     <div class="card">
-                                        <img src="{% static 'img/pordosol.jpg' %}" class="card-img-top" alt="...">
+                                        <img src="{% static 'img/pessoa.jpg' %}" class="card-img-top" alt="...">
                                     </div>
                                 </div>
                                 <div class="col-4">
@@ -157,7 +157,7 @@
                                 </div>
                                 <div class="col-4">
                                     <div class="card">
-                                        <img src="{% static 'img/peixe.jpg' %}" class="card-img-top" alt="...">
+                                        <img src="{% static 'img/caveira.jpg'%}" class="card-img-top" alt="...">
                                     </div>
                                 </div>
                             </div>
@@ -165,7 +165,7 @@
                             <div class="row" style="padding-bottom: 25px;">
                                 <div class="col-4">
                                     <div class="card">
-                                        <img src="{% static 'img/caveira.jpg' %}" class="card-img-top" alt="...">
+                                        <img src="{% static 'img/peixe.jpg' %}" class="card-img-top" alt="...">
                                     </div>
                                 </div>
                                 <div class="col-4">
