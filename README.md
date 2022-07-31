@@ -5,7 +5,7 @@ Para testar o projeto, utilize o comando "git clone <link do repositorio>" em se
 
 Após abrir o projeto em seu interpretador, lembre-se que o mesmo está construído dentro de uma VENV (Ambiente virtual) e para ativa-lo, digite o seguinte código em seu terminal:
 
-"source <nome da venv>/bin/activate" (no windows, substitua o "bin" por "scripts")
+"source venv/bin/activate" (no windows, substitua o "bin" por "scripts")
 
 Após tudo pronto, para visualizar o projeto em funcionamento em seu browser, utilize o seguinte comando:
 
